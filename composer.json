@@ -1,6 +1,8 @@
 {
     "name": "tombroucke/otomaties-downloads",
     "description" : "Add a custom post type for downloads",
+    "keywords": ["wordpress", "plugin", "downloads"],
+    "type": "wordpress-plugin",
     "autoload": {
         "psr-4": {
             "Otomaties\\Downloads\\": "app/"
