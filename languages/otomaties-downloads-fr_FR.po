@@ -1,0 +1,173 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Downloads\n"
+"POT-Creation-Date: 2023-03-01 11:19+0100\n"
+"PO-Revision-Date: 2023-03-01 11:20+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: otomaties-downloads.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Poedit-SearchPathExcluded-1: vendor\n"
+
+#: app/CustomPostTypes.php:19
+msgid "Download"
+msgstr "Télécharger"
+
+#. Plugin Name of the plugin/theme
+#: app/CustomPostTypes.php:20
+msgid "Downloads"
+msgstr "Téléchargements"
+
+#: app/CustomPostTypes.php:33
+msgid "Url"
+msgstr "Url"
+
+#: app/CustomPostTypes.php:42
+msgid "Preview"
+msgstr "Aperçu"
+
+#: app/CustomPostTypes.php:63
+msgid "File"
+msgstr "Fichier"
+
+#: app/CustomPostTypes.php:81
+msgid "Add New"
+msgstr "Ajouter nouveau"
+
+#: app/CustomPostTypes.php:84
+#, php-format
+msgid "Add New %s"
+msgstr "Nouveau %s"
+
+#: app/CustomPostTypes.php:89
+#, php-format
+msgid "Edit %s"
+msgstr "Modifier %s"
+
+#: app/CustomPostTypes.php:94
+#, php-format
+msgid "New %s"
+msgstr "Nouveau %s"
+
+#: app/CustomPostTypes.php:99 app/CustomPostTypes.php:104
+#, php-format
+msgid "View %s"
+msgstr "Voir %s"
+
+#: app/CustomPostTypes.php:109
+#, php-format
+msgid "Search %s"
+msgstr "Recherche %s"
+
+#: app/CustomPostTypes.php:114
+#, php-format
+msgid "No %s found."
+msgstr "Aucun %s trouvé."
+
+#: app/CustomPostTypes.php:119
+#, php-format
+msgid "No %s found in trash."
+msgstr "Aucun %s trouvé dans la poubelle."
+
+#: app/CustomPostTypes.php:124
+#, php-format
+msgid "Parent %s:"
+msgstr "Parent %s&nbsp;:"
+
+#: app/CustomPostTypes.php:129
+#, php-format
+msgid "All %s"
+msgstr "Tous %s"
+
+#: app/CustomPostTypes.php:134
+#, php-format
+msgid "%s Archives"
+msgstr "Archives des %s"
+
+#: app/CustomPostTypes.php:139
+#, php-format
+msgid "%s Attributes"
+msgstr "Attributs de %s"
+
+#: app/CustomPostTypes.php:144
+#, php-format
+msgid "Insert into %s"
+msgstr "Insérer dans %s"
+
+#: app/CustomPostTypes.php:149
+#, php-format
+msgid "Uploaded to this %s"
+msgstr "Uploader à ce %s"
+
+#: app/CustomPostTypes.php:154
+#, php-format
+msgid "Filter %s list"
+msgstr "Filtrer liste %s"
+
+#: app/CustomPostTypes.php:159
+#, php-format
+msgid "%s list navigation"
+msgstr "%s navigation"
+
+#: app/CustomPostTypes.php:164
+#, php-format
+msgid "%s list"
+msgstr "liste %s"
+
+#: app/CustomPostTypes.php:169
+#, php-format
+msgid "%s published."
+msgstr "%s publié."
+
+#: app/CustomPostTypes.php:174
+#, php-format
+msgid "%s published privately."
+msgstr "%s publié de manière privé."
+
+#: app/CustomPostTypes.php:179
+#, php-format
+msgid "%s reverted to draft."
+msgstr "%s refait en brouillon."
+
+#: app/CustomPostTypes.php:184
+#, php-format
+msgid "%s scheduled."
+msgstr "%s planifié."
+
+#: app/CustomPostTypes.php:189
+#, php-format
+msgid "%s updated."
+msgstr "%s mis à jour."
+
+#: otomaties-downloads.php:44
+msgid ""
+"<strong>Otomaties downloads</strong> is inactive. Please install & activate "
+"<strong>Advanced Custom Fields Pro</strong>."
+msgstr ""
+"<strong>Otomaties téléchargement</strong> est inactif. Veuillez installer "
+"et activer <strong>Advanced Custom Fields Pro</strong>."
+
+#. Description of the plugin/theme
+msgid "Add a custom post type for downloads."
+msgstr "Ajouter un custom post type personnalisé pour les téléchargements."
+
+#. Author of the plugin/theme
+msgid "Tom Broucke"
+msgstr "Tom Broucke"
+
+#. Author URI of the plugin/theme
+msgid "https://tombroucke.be/"
+msgstr "https://tombroucke.be/"
