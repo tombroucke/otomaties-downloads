@@ -1,6 +1,6 @@
 {
-    "name": "tombroucke/plugin-boilerplate",
-    "description" : "Boilerplate for WordPress plugins",
+    "name": "tombroucke/otomaties-downloads",
+    "description" : "Add a custom post type for downloads and a shortcode to display them",
     "license": "GNU GPLv3",
     "autoload": {
         "psr-4": {
