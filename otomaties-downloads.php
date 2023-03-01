@@ -37,6 +37,17 @@ register_deactivation_hook(__FILE__, '\\Otomaties\\Downloads\\Deactivator::deact
  */
 function init()
 {
+    if (!function_exists('get_field')) {
+        add_action('admin_notices', function () {
+            ?>
+            <div class="notice notice-error">
+                <p><?php _e('<strong>Otomaties downloads</strong> is inactive. Please install & activate <strong>Advanced Custom Fields Pro</strong>.', 'otomaties-downloads') ?></p>
+            </div>
+            <?php
+        });
+        return;
+    }
+
     if (! function_exists('get_plugin_data')) {
         require_once(ABSPATH . 'wp-admin/includes/plugin.php');
     }
