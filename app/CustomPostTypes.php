@@ -24,6 +24,7 @@ class CustomPostTypes
             [
                 'show_in_feed' => false,
                 'show_in_rest' => true,
+                'has_archive' => false,
                 'labels' => $this->postTypeLabels($postSingularName, $postPluralName),
                 'menu_icon' => 'dashicons-download',
                 'dashboard_activity' => true,

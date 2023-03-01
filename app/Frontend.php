@@ -26,7 +26,7 @@ class Frontend
     {
         global $wp_query;
         
-        if (get_query_var('post_type') != 'download' || !is_int(get_query_var('p'))) {
+        if (get_query_var('post_type') != 'download' || !is_int(get_query_var('p')) || get_query_var('p') < 1) {
             return;
         }
 
