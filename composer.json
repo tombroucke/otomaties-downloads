@@ -1,7 +1,6 @@
 {
     "name": "tombroucke/otomaties-downloads",
     "description" : "Add a custom post type for downloads",
-    "license": "GNU GPLv3",
     "autoload": {
         "psr-4": {
             "Otomaties\\Downloads\\": "app/"
