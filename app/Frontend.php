@@ -30,13 +30,21 @@ class Frontend
             return;
         }
 
-        $download = new Download(get_query_var('p'));
+        $downloadId = get_query_var('p');
+
+        $download = new Download($downloadId);
+    
+        if (get_post_status($downloadId) !== 'publish') {
+            $defaultLanguage = apply_filters('wpml_default_language', null);
+            $originalId = apply_filters('wpml_object_id', $downloadId, 'download', true, $defaultLanguage);
+            $download = new Download($originalId);
+        }
 
         if (!$download->fileId()) {
             $wp_query->set_404();
             status_header(404);
             nocache_headers();
-            exit;
+            return;
         }
         
         $file = get_attached_file($download->fileId());
@@ -46,7 +54,7 @@ class Frontend
             $filename       = esc_attr($filename);
 
             header("Content-Description: File Transfer");
-            header("Content-Type: {$filetype[ "type" ]}");
+            header("Content-Type: {$filetype[ "type" ]}", true, 200);
             header("Content-Disposition: attachment; filename={$filename}");
             header("Expires: 0");
             header("Cache-Control: must-revalidate");
@@ -56,22 +64,4 @@ class Frontend
             exit;
         }
     }
-
-    // /**
-    //  * Register the stylesheets for the public-facing side of the site.
-    //  *
-    //  */
-    // public function enqueueStyles() : void
-    // {
-    //     wp_enqueue_style($this->pluginName, Assets::find('css/main.css'), [], null);
-    // }
-
-    // /**
-    //  * Register the JavaScript for the public-facing side of the site.
-    //  *
-    //  */
-    // public function enqueueScripts() : void
-    // {
-    //     wp_enqueue_script($this->pluginName, Assets::find('js/main.js'), [], null, true);
-    // }
 }

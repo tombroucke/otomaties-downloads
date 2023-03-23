@@ -58,12 +58,16 @@ class CustomPostTypes
 
     public function addDownloadFields() : void
     {
-        $download = new FieldsBuilder('otomaties-download');
+        $download = new FieldsBuilder('otomaties-download', [
+            'style' => 'seamless',
+            'position' => 'acf_after_title',
+        ]);
         $download
             ->addFile('file', [
                 'label' => __('File', 'sage'),
-                'required' => 1,
+                'required' => 0,
                 'return_format' => 'ID',
+                'wpml_cf_preferences' => 2,
             ])
             ->setLocation('post_type', '==', 'download');
         acf_add_local_field_group($download->build());
