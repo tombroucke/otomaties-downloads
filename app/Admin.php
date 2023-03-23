@@ -20,4 +20,12 @@ class Admin
     public function __construct()
     {
     }
+
+    public function preventAttachmentToDownloadPost($attach, $attachment_id, $post_id)
+    {
+        if (get_post_type($post_id) == 'download') {
+            return false;
+        }
+        return $attach;
+    }
 }

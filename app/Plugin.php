@@ -79,7 +79,8 @@ class Plugin
      */
     private function defineAdminHooks() : void
     {
-        // $admin = new Admin();
+        $admin = new Admin();
+        $this->loader->addFilter('acf/connect_attachment_to_post', $admin, 'preventAttachmentToDownloadPost', 10, 3);
     }
 
     /**
