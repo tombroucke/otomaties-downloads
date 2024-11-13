@@ -5,7 +5,7 @@ namespace Otomaties\Downloads;
 /**
  * Plugin Name:       Downloads
  * Description:       Add a custom post type for downloads.
- * Version:           1.0.7
+ * Version:           1.0.8
  * Author:            Tom Broucke
  * Author URI:        https://tombroucke.be/
  * License:           GPL-2.0+
